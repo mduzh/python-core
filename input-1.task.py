@@ -2,3 +2,5 @@
 # 2. Вывести текст: Ваше имя: и потом то, что ввел пользователь
 
 
+name = input("Enter your name: ")
+print("Your name is ", name)
