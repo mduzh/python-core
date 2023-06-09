@@ -2,3 +2,10 @@
 # - Если a = b или a = c, тогда на экран выводим текст Есть совпадение
 # - Иначе выводим Нет совпадения!
 
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+if a == b or b == c:
+    print("Some similarities!")
+else:
+    print("No similarities!")
