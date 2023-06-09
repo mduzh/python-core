@@ -8,3 +8,9 @@
 # https://youtu.be/DZvNZ9l9NT4?t=893 - тут можно посмотреть теорию
 
 
+ws = input("Enter the width: ")
+w = int(ws)
+hs = input("Enter the height: ")
+h = int(hs)
+res = h * w
+print(res)
