@@ -4,4 +4,7 @@
 # Код ниже
 
 str = "What is your name?"
+for i in str:
+    print(i)
+
 
