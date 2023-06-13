@@ -4,4 +4,6 @@
 # Код ниже
 
 str = "ABBBAABA"
-
+for i in str:
+    if i == "A":
+        print(i)
