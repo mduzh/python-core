@@ -8,7 +8,6 @@ print("= START =")
 i = 1
 while i < 11:
     i = i + 1
-    print(i)
     if i < 11:
         i == i + 1
     else:
@@ -20,6 +19,6 @@ while i < 11:
 # Код ниже
 print("= START =")
 i = 21
-while i < 30:
+while i < 31:
     print(i)
     i += 2
