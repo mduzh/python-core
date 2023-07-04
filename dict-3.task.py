@@ -8,4 +8,5 @@ car = {
   "model": "Mustang",
   "year": 1964
 }
-
+for i, val in car.items():
+    print(i, ' - ', val)
