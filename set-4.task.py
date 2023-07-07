@@ -18,3 +18,4 @@ for student in lst:
     firstname = student["firstName"]
     res.add(firstname)
 print(res)
+print("-End-")
