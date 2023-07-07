@@ -13,3 +13,8 @@ lst = [
     {"firstName": "Vadim", "lastName": "Ivanov"},
     {"firstName": "Pavel", "lastName": "Pavlov"},
 ]
+res = set([])
+for student in lst:
+    firstname = student["firstName"]
+    res.add(firstname)
+print(res)
