@@ -6,3 +6,11 @@
 print("=== START ===")
 
 
+def func1(s1, s2):
+    a = s1.upper()
+    print(a)
+    b = s2.lower()
+    print(b)
+
+
+func1("hello", "world")
