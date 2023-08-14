@@ -12,4 +12,17 @@
 # - в переменную res заносим сумму num1 и num2
 # - в переменную s заносим res как строку (используем str)
 # - записываем s в file-3.out.txt в каталоге tmp
+file = open('data/file-3.in.txt', 'r')
 
+s1 = file.readline()
+num1 = int(s1)
+s2 = file.readline()
+num2 = int(s2)
+res = num2 + num1
+s = str(res)
+file.close()
+
+file2 = open('tmp/file-3.out.txt', 'w')
+file2.write(s)
+
+file2.close()
