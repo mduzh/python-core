@@ -13,3 +13,16 @@
 # - записать s в файл tmp/olymp-001-out.txt
 
 # - зайти в файл tmp/olymp-001-out.txt и проверить результат
+
+file = open('data/olymp-001-in.txt', 'r')
+
+s1 = file.readline()
+num1 = int(s1)
+s2 = file.readline()
+num2 = int(s2)
+res = num1 + num2
+s = str(res)
+
+file = open('data/olymp-001-in.txt', 'w')
+file.write(s)
+file.close()
