@@ -22,7 +22,9 @@ s2 = file.readline()
 num2 = int(s2)
 res = num1 + num2
 s = str(res)
+file.close()
 
-file = open('data/olymp-001-in.txt', 'w')
+
+file = open('tmp/olymp-001-out.txt', 'w')
 file.write(s)
 file.close()
