@@ -1,18 +1,19 @@
-# В файле data/olymp-002-in.txt заданы 3 числа.
-# Нужно сложить 2 первых числа и умножить на 3-е число.
-# Результат записать в файл tmp/olymp-002-out.txt
+# В файле data/olymp-003-in.txt заданы числа.
+# Нужно сложить все числа и результат записать в файл tmp/olymp-003-out.txt
 
-file = open('data/olymp-002-in.txt', 'r')
-s1 = file.readline()
-num1 = int(s1)
-s2 = file.readline()
-num2 = int(s2)
-s3 = file.readline()
-num3 = int(s3)
-res = (num1 + num2) * num3
-result = str(res)
+# Подсказка
+# - заводим переменную со значением 0, в которой будет храниться результат
+# - читаем каждую строку из файла (используем for - см. file-1.task.py в конце)
+# - переводим прочитанную строку в число и добавляем к результату
+
+res = 0
+
+file = open('data/olymp-003-in.txt', 'r')
+for s in file:
+    value = int(s)
+    res = res + value
 file.close()
 
-file1 = open('tmp/olymp-002-out.txt', "w")
-file1.write(result)
+file = open('tmp/olymp-003-out.txt', "w")
+file.write(str(res))
 file.close()
