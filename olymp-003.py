@@ -10,11 +10,13 @@
 file = open('data/olymp-003-in.txt', 'r')
 res = 0
 for num in file:
-    result = res + int(num)
-    print(result)
-    res1 = str(result)
+    res = res + int(num)
+
+print(res)
+file.close()
 
 file1 = open('tmp/olymp-003-out.txt', "w")
-file1.write(res1)
+r = str(res)
+file1.write(r)
 
 file1.close()
