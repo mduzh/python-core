@@ -4,3 +4,12 @@
 
 # Подсказки:
 # - Можно посмотреть задачу №2 в file-2.task.py
+
+
+file = open('data/file-4.in.txt', 'r')
+str_list = []
+for s in file:
+    str_list.append(s)
+print(str_list,)
+file.close()
+
