@@ -16,4 +16,22 @@
 # - Потом открывае фай tmp/olymp-007-out.txt назапись
 # - проходим циклом по всем элементам str_list и пишем их в выходной файл
 
+in_file = open('data/olymp-008-in.txt', 'r')
+str_list = []
+for s in in_file:
+    str_list.append(s)
+in_file.close()
+print(str_list)
 
+for index in range(0, len(str_list), 2):
+    a = str_list[index]
+    b = str_list[index + 1]
+    str_list[index] = b
+    str_list[index + 1] = a
+
+print(str_list)
+
+out_file = open('tmp/olymp-008-out.txt', 'w')
+for s in str_list:
+    out_file.write(s)
+out_file.close()
