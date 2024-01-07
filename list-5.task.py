@@ -5,23 +5,40 @@
 # - когда цикл закончится, то в maximum будет максимально значение
 maximum = 0
 lst = [1, 3, 4, 7, 8, 10]
-for i in lst:
-    if i > maximum:
-        maximum = i
+for number in lst:
+    if number > maximum:
+        maximum = number
 print(maximum)
+
 # Дан список положительных чисел. Найти минимальный элемент и вывести на экран
 # Подсказка:
-minimum = 0
 lst = [11, 3, 4, 7, 8, 10]
-minimum = min(lst)
+minimum = lst[0]
+for number in lst:
+    if number < minimum:
+        minimum = number
 print(minimum)
+
 # Дан список положительных чисел. Найти максимальный и минимальный элемент и вывести на экран
 # Подсказка:
 # - нужно делать 2 проверки: одну проверять с максимумом, другую с минимумом
-maximum = 0
-minimum = 0
 lst = [11, 3, 4, 7, 8, 10]
-maximum = max(lst)
-minimum = min(lst)
+maximum = lst[0]
+minimum = lst[0]
+for number in lst:
+    if number > maximum:
+        maximum = number
+for number in lst:
+    if number < minimum:
+        minimum = number
+print(maximum, minimum)
+
+maximum = lst[0]
+minimum = lst[0]
+for number in lst:
+    if number > maximum:
+        maximum = number
+    if number < minimum:
+        minimum = number
 print(maximum, minimum)
 

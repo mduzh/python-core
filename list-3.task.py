@@ -6,8 +6,8 @@
 print("=" * 5)
 total = 0
 lst = [2, 4, 7]
-for i in lst:
-    total = total + i
+for element in lst:
+    total = total + element
 print(total)
 print("-" * 5)
 
@@ -18,10 +18,11 @@ print("-" * 5)
 # -- проходя по списку умножать total на значение элемента списка
 total = 1
 lst = [1, 2, 3]
-for i in lst:
-    total = total * i
+for element in lst:
+    total = total * element
 print(total)
 print("-" * 5)
+
 # - Дан список. Вывести на экран объединение всех элементов списка ("Hello World !") используя цикл for
 # - Подсказка:
 # -- использовать переменную s, в которой будем объединать все сроки
@@ -29,26 +30,24 @@ print("-" * 5)
 # -- проходя по списку в total добавляем " " и значение элемента списка
 s = ""
 lst = ["Hello", "World", "!"]
-for i in lst:
-    s = s + " " + i
+for element in lst:
+    s = s + " " + element
 print(s)
+
 # - Дан список. Вывести на экран сумму (total) всех элементов списка, которые больше 5
-# - Подсказка: использовать if в внутри for
+# - Подсказка: использовать if внутри for
 total = 0
 lst = [1, 2, 10, 15, 20]
-for i in lst:
-    if i > 5:
-        total = total + i
-
+for element in lst:
+    if element > 5:
+        total = total + element
 print(total)
+
 # - Дан список. Вывести на экран произведение (total) всех элементов списка, которые меньше 5
 # - Подсказка: использовать if в внутри for
 total = 1
 lst = [1, 2, 10, 15, 20]
-for i in lst:
-    if i < 5:
-        total = total * i
-
+for element in lst:
+    if element < 5:
+        total = total * element
 print(total)
-
-
