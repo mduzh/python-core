@@ -23,6 +23,8 @@ print(student_data)
 
 # Создать переменную empty_lst, который содержит пустой список.
 # Распечатать empty_lst.
+empty_lst = []
+print(empty_lst)
 
 # Есть 3 переменные microsoft, google и facebook
 # Создать переменную company_lst, который содержит 3 переменные microsoft, google и facebook.
@@ -69,7 +71,7 @@ print(phone_lst)
 # Поменять второй элемент с конца списка, записав туда Sony
 # Распечатать phone_lst. Убедиться, что выведется ['Nokia', 'One Plus', 'Sony', 'Xiaomi']
 phone_lst = ['Nokia', 'One Plus', 'Samsung', 'Xiaomi']
-phone_lst[1] = 'Sony'
+phone_lst[-2] = 'Sony'
 print(phone_lst)
 
 # Создать переменную car_lst, который содержит Honda, Mazda, Zeekr и Audi.
