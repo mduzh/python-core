@@ -5,25 +5,33 @@
 
 # Создайте диапазон из 10 элементов (от 0 до 9) и сохраните его в переменной int_range.
 # Распечатать int_range, и убедиться, что выводиться range(0, 10).
-
+int_range = range(10)
+print(int_range)
 
 # int_range содержит последовательность целых чисел от 0 до 9: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
 # Чтобы посмотреть все элементы диапазона, преобразовать его в список используя функцию list и сохранить его в
 # переменную int_list.
 # Распечатать int_list, и убедиться, что выводится [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].
-
+int_list = list(int_range)
+print(int_list)
 
 # Создайте диапазон с начальным значением 10 и конечным значением 15 и сохраните его в переменной second_range.
 # Преобразовать second_range в список second_range_lst.
 # Распечатать second_range_lst, и убедиться, что выводится [10, 11, 12, 13, 14].
-
+second_range = range(10, 15)
+second_range_list = list(second_range)
+print(second_range_list)
 
 # Создайте диапазон с начальным значением 11, конечным значением 20 и шагом 2. Сохраните его в переменной third_range.
 # Преобразовать third_range в список third_range_lst.
 # Распечатать third_range_lst, и убедиться, что выводится [11, 13, 15, 17, 19].
-
+third_range = range(11, 20, 2)
+third_range_list = list(third_range)
+print(third_range_list)
 
 # Создайте диапазон с начальным значением 31, конечным значением 40 и шагом 3. Сохраните его в переменной fourth_range.
 # Преобразовать fourth_range в список fourth_range_lst.
 # Распечатать fourth_range_lst, и убедиться, что выводится [31, 34, 37].
-
+fourth_range = range(31, 40, 3)
+fourth_range_list = list(fourth_range)
+print(fourth_range_list)
