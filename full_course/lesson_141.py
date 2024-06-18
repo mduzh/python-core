@@ -2,14 +2,14 @@
 # Если положительное, то вывести значение на экран и рядом написать Положительное
 first_num = 10
 if first_num > 0:
-    print('Positive')
+    print(first_num, 'Positive')
 
 # Для заданного числа second_num проверить, является ли оно положительным.
 # Если отрицательное, то вывести значение на экран и рядом написать Отрицательное.
 second_num = -5
 if second_num > 0:
-    print('Positive')
+    print(second_num, 'Positive')
 else:
-    print('Negative')
+    print(second_num, 'Negative')
 
 
