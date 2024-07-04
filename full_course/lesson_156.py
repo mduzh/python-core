@@ -16,11 +16,11 @@ print(sum_nums)
 # Напиши программу, которая для списка чисел num_list_2 и вычисляет их произведение.
 # Распечатай результат и убедись, что программа вывела 24.
 num_list_2 = [1, 2, 3, 4]
-total = 1
+total_price_2 = 1
 for d in num_list_2:
-    total = total * d
+    total_price_2 = total_price_2 * d
 
-print(total)
+print(total_price_2)
 
 # Напиши программу, которая находит и выводит минимальный элемент в списке чисел.
 # Подсказка: сначала нужно завести переменную min_value, в которой будешь хранить минимальное значение.
@@ -106,18 +106,23 @@ print(age_list)
 # Для заданного списка price_list_2 сложить только цены, которые идут под четными индексами, т.е. 0, 2, 4  и т.д.
 # Результат вывести на экран. Должно быть 160.
 # Есть несколько решений. Ниже постановка для каждого из них.
-price_list_2 = [10, 20, 30, 40, 50, 50, 70, 80]
-total = 0
-for i in range(0, len(price_list_2), 2):
-    total = total + price_list_2[i]
-
-print(total)
 
 # Решение 1: Пройти по всем индексам списка и проверять, является ли индекс четным. И только тогда его в сумму добавить.
+price_list_1 = [10, 20, 30, 40, 50, 50, 70, 80]
+total_ind_price_1 =0
+for ind_even in range(len(price_list_1)):
+    if ind_even % 2 == 0:
+        total_ind_price_1 = total_ind_price_1 + price_list_1[ind_even]
 
+print(total_ind_price_1)
 # Решение 2: Сделать индекс с шагом 2 через range и значения по этим индексам добавлять в сумму. Это лучшее решение,
 # так как цикл повторяется только 4 раза и нет проверок (if) - будет работать быстрее в 2 раза минимум.
+price_list_2 = [10, 20, 30, 40, 50, 50, 70, 80]
+total_price_2 = 0
+for i in range(0, len(price_list_2), 2):
+    total_price_2 = total_price_2 + price_list_2[i]
 
+print(total_price_2)
 
 # Для заданного списка price_list_3 сложить только цены, которые идут под нечетными индексами, т.е. 1, 3, и т.д.
 # Результат вывести на экран. Должно быть 190.
@@ -125,8 +130,8 @@ print(total)
 
 price_list_3 = [10, 20, 30, 40, 50, 50, 70, 80]
 
-total1 = 0
+total_price_3 = 0
 for odd_index in range(1, len(price_list_3), 2):
-    total1 = total1 + price_list_3[odd_index]
+    total_price_3 = total_price_3 + price_list_3[odd_index]
 
-print(total1)
+print(total_price_3)
