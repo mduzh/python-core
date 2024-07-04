@@ -52,13 +52,14 @@ print(max_num)
 num_list_5 = [10, 20, 5, 40, 15]
 max_num = num_list_5[0]
 min_num = num_list_5[0]
-for ints in num_list_5:
-    if ints > max_num:
-        max_num = ints
-    elif ints < min_num:
-        min_num = ints
+for int_5 in num_list_5:
+    if int_5 > max_num:
+        max_num = int_5
 
-print(max_num,' ; ', min_num)
+    if int_5 < min_num:
+        min_num = int_5
+
+print(max_num, ' ; ', min_num)
 
 # Напиши программу, которая вычисляет среднее значение элементов списка чисел.
 # Нужно сложить все элементы списка, а потом поделить на кол-во элементов списка (len используй)
