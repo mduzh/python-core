@@ -203,9 +203,9 @@ print(value_6)
 
 # Задача 4: Для списка price_list_6 найти минимальный и максимальный элемент среди тех , которые идут после 2-го.
 # Распечатать результат. Результат должен содержать числа: 3 и 50
-max6 = price_list_6[0]
-min6 = price_list_6[0]
-for el in range(4, len(price_list_6)):
+max6 = price_list_6[2]
+min6 = price_list_6[2]
+for el in range(2 , len(price_list_6)):
     if price_list_6[el] > max6:
         max6 = price_list_6[el]
     if price_list_6[el] < min6:
