@@ -231,4 +231,13 @@ counts = [10, 5, 5, 6, 11]
 # - если letter_ind равно -1, тогда выводим на экран "Буква не найдена", иначе выводим количество раз этой буквы из
 # counts по индексу letter_ind
 
+letters = ['a', 'b', 'c', 'd', 'e']
+counts = [10, 5, 5, 6, 11]
 test_letter = 'd'
+letter_ind = letters[0]
+for l in range(len(letters)):
+    if letters[l] == test_letter:
+        letter_ind = l
+for i in range(len(counts)):
+    if i == letter_ind:
+        print(counts[letter_ind])
