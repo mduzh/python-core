@@ -233,11 +233,15 @@ counts = [10, 5, 5, 6, 11]
 
 letters = ['a', 'b', 'c', 'd', 'e']
 counts = [10, 5, 5, 6, 11]
+
 test_letter = 'd'
-letter_ind = letters[0]
-for l in range(len(letters)):
-    if letters[l] == test_letter:
-        letter_ind = l
-for i in range(len(counts)):
-    if i == letter_ind:
-        print(counts[letter_ind])
+
+letter_ind = -1
+for i in range(len(letters)):
+    if letters[i] == test_letter:
+        letter_ind = i
+
+if letter_ind == -1:
+    print('Буква не найдена')
+else:
+    print(counts[letter_ind])
