@@ -2,7 +2,6 @@
 # В блоке кода нужно сложить a и b, а результат присвоить переменной sum. Затем sum вернуть из функции.
 def sum_nums(a, b):
     summ = a + b
-
     return summ
 
 
@@ -53,42 +52,68 @@ def hello():
 
 
 hello_value = hello()
+
 print(hello_value)
+
 
 # Объявить функцию my_max с параметром num_lst, который содержит список чисел. Функция находит максимальное значение
 # в списке и возвращает его.
 # Примечание: В блоке кода нужно пройти по списку и найти максимальное значение и сохранить его в переменной max_value.
 # Затем max_value вернуть из функции.
+def my_max(num_lst):
+    for num in num_lst:
+        max_value = max(num_lst)
+        return max_value
 
 
 # Вызвать функцию my_max с параметрами [10, 5, 5, 6, 11] и сохранить результат в переменной max_res.
 # Вывести max_res на экран и убедиться, что там 11.
-
+max_res = my_max([10, 5, 5, 6, 11])
+print(max_res)
 
 # Вызвать функцию my_max с параметрами [15, 1, 6] и сохранить результат в переменной max_res.
 # Вывести max_res на экран и убедиться, что там 15.
+max_res = my_max([15, 1, 6])
+print(max_res)
 
 
 # Объявить функцию my_min с параметром num_lst, который содержит список чисел. Функция находит минимальное значение
 # в списке и возвращает его.
+def my_min(num_lst):
+    for min_num in num_lst:
+        min_value = min(num_lst)
+        return min_value
+
 
 # Вызвать функцию my_min с параметрами [10, 5, 5, 6, 11] и сохранить результат в переменной min_res.
 # Вывести min_res на экран и убедиться, что там 5.
-
+min_res = my_min([10, 5, 5, 6, 11])
+print(min_res)
 
 # Вызвать функцию my_min с параметрами [15, 1, 6] и сохранить результат в переменной min_res.
 # Вывести min_res на экран и убедиться, что там 1.
+min_res = my_min([15, 1, 6])
+print(min_res)
 
 
 # Объявить функцию my_mun с параметром num_lst, который содержит список чисел. Функция находит сумму всех значений
 # в списке и возвращает ее.
+def my_sum(num_lst):
+    total = 0
+    for s in num_lst:
+        total = total + s
+        return total
+
 
 # Вызвать функцию my_sum с параметрами [10, 9, 11] и сохранить результат в переменной sum_res.
 # Вывести sum_res на экран и убедиться, что там 30.
-
+sum_res = my_sum([10, 9, 11])
+print(sum_res)
 
 # Вызвать функцию my_sum с параметрами [13, 1, 6] и сохранить результат в переменной sum_res.
 # Вывести sum_res на экран и убедиться, что там 20.
+sum_res = my_sum([13, 1, 6])
+print(sum_res)
 
 
 # Написать функцию index_in_list, которая возвращает индекс буквы в массиве букв.
@@ -103,3 +128,21 @@ print(hello_value)
 # по циклу по индексу, и если значение по индексу совпадает, тогда в letter_ind заносим текущий индекс.
 # Когда цикл закончится, то в letter_ind будет или None или правильный индекс. Нужно проверить letter_ind - если оно
 # равно None, то тогда вернуть -1. Иначе вернуть то, что лежит в letter_ind.
+def index_in_list(letter_lst, letter):
+    letter_ind = None
+
+    for i in range(len(letter_lst)):
+        if letter_lst[i] == letter:
+            letter_ind = i
+
+    if letter_ind is None:
+        return -1
+    else:
+        return letter_ind
+
+
+index_letter_res = index_in_list(['a', 'b', 'c', 'd'], 'c')
+print(index_letter_res)
+
+index_letter_res = index_in_list(['a', 'b', 'c', 'd'], 'y')
+print(index_letter_res)
