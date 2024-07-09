@@ -14,7 +14,7 @@
 
 # - зайти в файл tmp/olymp-001-out.txt и проверить результат
 
-file = open('data/olymp-001-in.txt', 'r')
+file = open('../data/olymp-001-in.txt', 'r')
 
 s1 = file.readline()
 num1 = int(s1)
@@ -25,6 +25,6 @@ s = str(res)
 file.close()
 
 
-file = open('tmp/olymp-001-out.txt', 'w')
+file = open('../tmp/olymp-001-out.txt', 'w')
 file.write(s)
 file.close()

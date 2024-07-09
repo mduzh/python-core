@@ -9,7 +9,7 @@
 # file.close()
 
 
-file = open('data/text.txt', 'r')
+file = open('../data/text.txt', 'r')
 
 # print(file.read(10))
 for line in  file:

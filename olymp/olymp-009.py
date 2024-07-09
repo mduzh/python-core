@@ -14,7 +14,7 @@
 # - в задаче olymp-008 в range шаг 2, а тут 3
 
 
-in_file = open('data/olymp-009-in.txt', 'r')
+in_file = open('../data/olymp-009-in.txt', 'r')
 str_list = []
 for s in in_file:
     str_list.append(s)
@@ -30,7 +30,7 @@ for i in range(0, len(str_list), 3):
     str_list[i + 2] = a
 print(str_list)
 
-out_file = open('tmp/olymp-009-out.txt', 'w')
+out_file = open('../tmp/olymp-009-out.txt', 'w')
 for s in str_list:
     out_file.write(s)
 out_file.close()

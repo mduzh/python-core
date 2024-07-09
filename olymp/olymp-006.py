@@ -11,7 +11,7 @@
 
 
 max_number = -1
-file = open('data/olymp-006-in.txt', 'r')
+file = open('../data/olymp-006-in.txt', 'r')
 for i in file:
     num = int(i)
     if num > max_number:
@@ -20,7 +20,7 @@ print('max :', max_number)
 file.close()
 
 
-file1 = open('tmp/olymp-006-out.txt', "w")
+file1 = open('../tmp/olymp-006-out.txt', "w")
 r = str(max_number)
 file1.write(r)
 

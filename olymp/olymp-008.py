@@ -16,7 +16,7 @@
 # - Потом открывае фай tmp/olymp-007-out.txt назапись
 # - проходим циклом по всем элементам str_list и пишем их в выходной файл
 
-in_file = open('data/olymp-008-in.txt', 'r')
+in_file = open('../data/olymp-008-in.txt', 'r')
 str_list = []
 for s in in_file:
     str_list.append(s)
@@ -31,7 +31,7 @@ for index in range(0, len(str_list), 2):
 
 print(str_list)
 
-out_file = open('tmp/olymp-008-out.txt', 'w')
+out_file = open('../tmp/olymp-008-out.txt', 'w')
 for s in str_list:
     out_file.write(s)
 out_file.close()

@@ -7,7 +7,7 @@
 # - используй задачу olymp-009, только там шаг 3, а у тут 4
 # - когда будешь выводить числа в файл, то не забудь их перевести в строки
 
-in_file = open('data/olymp-010-in.txt', 'r')
+in_file = open('../data/olymp-010-in.txt', 'r')
 num_list = []
 for s in in_file:
     n = int(s)
@@ -31,7 +31,7 @@ for index in range(0, len(num_list), 4):
     res4 = res4 + d
 print(res1 , res2, res3 , res4)
 
-out_file = open('tmp/olymp-010-out.txt', 'w')
+out_file = open('../tmp/olymp-010-out.txt', 'w')
 out_file.write(str(res1))
 out_file.write('\n')
 out_file.write(str(res2))

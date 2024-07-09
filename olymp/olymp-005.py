@@ -9,7 +9,7 @@
 # - потом res записываем в tmp/olymp-005-out.txt
 
 res = 'No'
-file = open('data/olymp-005-in.txt', 'r')
+file = open('../data/olymp-005-in.txt', 'r')
 
 for s in file:
     num = int(s)
@@ -22,7 +22,7 @@ print(res)
 file.close()
 
 
-file1 = open('tmp/olymp-005-out.txt', "w")
+file1 = open('../tmp/olymp-005-out.txt', "w")
 r = str(res)
 file1.write(r)
 

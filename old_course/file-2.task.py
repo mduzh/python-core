@@ -8,7 +8,7 @@
 # - добавляем n к total
 # - выводим total на экран
 total = 0
-file = open('data/file-2.task.txt', 'r')
+file = open('../data/file-2.task.txt', 'r')
 for line in file:
     n = int(line)
     total = total + n
@@ -32,7 +32,7 @@ file.close()
 # - добавляем каждый элемент списка к total
 # - выводим total на экран
 
-file = open('data/file-2.task.txt', 'r')
+file = open('../data/file-2.task.txt', 'r')
 data = []
 for s in file:
     n = int(s)
