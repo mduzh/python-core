@@ -250,14 +250,29 @@ else:
 # Функция принимает 3 параметра: letter_lst, count_lst и test_letter и возвращает 0, если по букве нет информации
 # в тексте или число, сколько раз она встречается в тексте.
 
-
 # Реализовать функцию get_letter_count
+print("1" * 10)
+
+
+def get_letter_count(letter_list, count_list, test_letter):
+    letter_index = -1
+
+    for i in range(len(letter_list)):
+        if letter_list[i] == test_letter:
+            letter_index = i
+
+    if letter_index == -1:
+        return 0
+    else:
+        return count_list[letter_index]
 
 
 # Вызвать функцию с параметрами ['a', 'b', 'c', 'd', 'e'], [10, 5, 5, 6, 11], 'd' и сохранить результат в переменной
 # count_res. Вывести count_res на экран и убедиться, что там 6.
 
-
+count_res = get_letter_count(['a', 'b', 'c', 'd', 'e'], [10, 5, 5, 6, 11], 'd')
+print('count_res:', count_res)
 # Вызвать функцию с параметрами ['a', 'b', 'c', 'd', 'e'], [10, 5, 5, 6, 11], 'y' и сохранить результат в переменной
 # count_res. Вывести count_res на экран и убедиться, что там 0.
-
+count_res = get_letter_count(['a', 'b', 'c', 'd', 'e'], [10, 5, 5, 6, 11], 'y')
+print('count_res:', count_res)
