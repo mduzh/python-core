@@ -5,3 +5,8 @@
 #
 # Подсказка: можно использовать цикл for и диапазон range.
 #
+value = int(input('Enter your number: '))
+factorial = 1
+for n in range(1, value + 1):
+    factorial = factorial * n
+print(factorial)
