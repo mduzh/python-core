@@ -20,5 +20,5 @@ for c in str_num_lst:
         even_count = even_count +1
     if int_value % 2 != 0:
         odd_count = odd_count + 1
-print('even = ', even_count, 'odd = ',  odd_count)
+print('even : ', even_count, 'odd : ',  odd_count)
 # Выводим результат на экран. Убеждаемся, что если ввести 2 3 5, т будет 1 и 2. А если ввести 2 4 6, то будет 0 и 3
