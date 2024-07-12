@@ -4,5 +4,10 @@
 # Так как строка - это список, то можно пройти с помощью for. Потом каждый символ переводим в цифру и складываем.
 #
 # Вывести на экран результат. Убедиться для введенного значения 4150 результатом будет 10.
+value_str = input("Enter your number: ")
 
-
+total = 0
+for value in value_str:
+    value_int = int(value)
+    total = total + value_int
+print(total)
