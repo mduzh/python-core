@@ -14,4 +14,6 @@
 # выходные данные
 # 7
 
-Пишем код здесь ...
+str_value = input('Enter your number: ')
+res = str_value[-2]
+print(res)
