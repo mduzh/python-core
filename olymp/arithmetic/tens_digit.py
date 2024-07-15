@@ -12,4 +12,6 @@
 # выходные данные
 # 4
 
-Пишем код здесь ...
+num = int(input('Enter your number: '))
+res = num // 10
+print(res)
