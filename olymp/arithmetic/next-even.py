@@ -16,3 +16,7 @@
 # 8
 # выходные данные
 # 10
+
+int_value = int(input('Enter your number: '))
+res = int_value + 2 - (int_value % 2)
+print(res)
