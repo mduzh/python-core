@@ -12,6 +12,6 @@
 # выходные данные
 # 9
 
-N = input('Enter your number: ')
-res = N[-1]
+last_value = input('Enter your number: ')
+res = last_value[-1]
 print(res)
