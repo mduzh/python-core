@@ -21,3 +21,26 @@
 # 129700
 # выходные данные
 # 12:01:40
+
+n = int(input('Enter the amount of seconds: '))
+
+# сколько часов
+total_h = n // 3600 % 24
+# оставшиеся секунды
+rem_sec = n % 3600
+
+# из оставшихся секунд получаем минуты
+total_mm = rem_sec // 60
+# преобразуем минуты в строку
+total_mm_str = str(total_mm)
+if total_mm < 10:
+    total_mm_str = '0' + total_mm_str
+
+# из оставшихся секунд получаем секунды
+total_ss = rem_sec % 60
+# преобразуем секунды в строку
+total_ss_str = str(total_ss)
+if total_ss < 10:
+    total_ss_str = '0' + total_ss_str
+
+print(total_h, ':', total_mm_str, ':', total_ss_str)
