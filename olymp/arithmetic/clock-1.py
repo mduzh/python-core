@@ -21,6 +21,8 @@
 # 0 1
 
 n = int(input('Enter your value: '))
-hours = n // 60
+
 minutes = n % 60
+hours = 60 * minutes
+hours = n // 60
 print(hours, minutes)

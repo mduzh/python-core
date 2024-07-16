@@ -19,7 +19,7 @@
 
 a = int(input('Enter your number 1: '))
 b = int(input('Enter your number 2: '))
-c = b
-d = a
-
-print(c, d)
+v = a
+a = b
+b = v
+print(a, b)
