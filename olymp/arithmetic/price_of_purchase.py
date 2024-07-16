@@ -26,14 +26,13 @@ a = int(input('Enter the amount of byn: '))
 b = int(input('Enter the amount of cent: '))
 n = int(input('Enter the amount of bunnies: '))
 
-total_byn = a * n
-total_cent = b * n
+total_in_cents = (a * 100 + b) * n
 
-rub_in_cent = total_cent // 100
-rem_cents = total_cent % 100
+total_byn = total_in_cents // 100
+total_cent = total_in_cents % 100
 
-total_byn = total_byn + rub_in_cent
+print(total_byn, total_cent)
 
-print(total_byn, rem_cents)
+
 
 
