@@ -20,3 +20,17 @@
 # выходные данные
 # 10 35
 
+lesson = int(input('Enter your number of the lesson: '))
+total = 540 + lesson * 45
+total = total + 15 * (lesson // 2)
+total = total + 5 * (lesson - (lesson // 2))
+
+if lesson % 2 == 0:
+    total = total - 15
+else:
+    total = total - 5
+
+
+lesson_hours = total // 60
+lesson_minutes = total % 60
+print(lesson_hours, ':', lesson_minutes)
