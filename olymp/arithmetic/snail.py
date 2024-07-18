@@ -25,3 +25,10 @@
 # 3
 # выходные данные
 # 5
+
+h = int(input('Enter the height: '))
+a = int(input('Enter up meters: '))
+b = int(input('Enter down meters: '))
+res = (h // (a - b)) + (h % (a + b)) - 2
+print(res)
+
