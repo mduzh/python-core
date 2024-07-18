@@ -30,3 +30,22 @@
 # 20
 # выходные данные
 # 50
+
+hours_1 = int(input('Enter first hour: '))
+minutes_1 = int(input('Enter first minutes: '))
+seconds_1 = int(input('Enter first seconds: '))
+hours_2 = int(input('Enter second hour: '))
+minutes_2 = int(input('Enter second minutes: '))
+seconds_2 = int(input('Enter second seconds: '))
+
+hours_in_seconds_1 = hours_1 * 3600
+minutes_in_seconds_1 = minutes_1 * 60
+
+hours_in_seconds_2 = hours_2 * 3600
+minutes_in_seconds_2 = minutes_2 * 60
+
+total_second_1 = (hours_in_seconds_1 + minutes_in_seconds_1 + seconds_1)
+total_second_2 = (hours_in_seconds_2 + minutes_in_seconds_2 + seconds_2)
+
+res = total_second_2 - total_second_1
+print(res)
