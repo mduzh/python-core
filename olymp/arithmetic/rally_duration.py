@@ -21,3 +21,11 @@
 # 2100
 # выходные данные
 # 3
+
+n = int(input('Enter the amount of km per day: '))
+m = int(input('Enter the distance: '))
+
+res = m // n
+if m % n != 0:
+    res = res + 1
+print(res)
