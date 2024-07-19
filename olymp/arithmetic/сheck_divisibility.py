@@ -22,3 +22,14 @@
 # 2
 # выходные данные
 # 1
+
+n = int(input("Enter your first number: "))
+m = int(input("Enter your second number: "))
+
+# if n % m == 0:
+#     print(1)
+# else:
+#     print(-1)
+
+res = n % m + 1
+print(res)
