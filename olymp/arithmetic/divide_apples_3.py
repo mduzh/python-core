@@ -24,3 +24,11 @@
 # выходные данные
 # 0
 
+n = int(input('Enter the amount of students: '))
+k = int(input('Enter the amount of apples: '))
+
+if k % n == 0:
+    print("All apples were divided evenly")
+if k % n != 0:
+    res = n - (k % n)
+    print(res)
