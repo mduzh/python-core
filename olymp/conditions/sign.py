@@ -17,3 +17,13 @@
 # 179
 # выходные данные
 # 1
+
+
+x = int(input('Enter your value of the function: '))
+if x > 0:
+    sign = 1
+elif x < 0:
+    sign = -1
+else:
+    sign = 0
+print(sign)
