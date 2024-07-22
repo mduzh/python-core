@@ -16,3 +16,11 @@
 # 1
 # выходные данные
 # 10
+
+k = int(input('Enter the amount of cutlet: '))
+m = int(input('Enter the frying time of the cutlets: '))
+n = int(input('Enter the amount of cutlets that u can fry: '))
+
+res_1 = k / (2 * m)
+res_2 = n / res_1
+print(res_2)
