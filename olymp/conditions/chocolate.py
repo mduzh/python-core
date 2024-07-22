@@ -22,3 +22,12 @@
 # 1
 # выходные данные
 # NO
+
+n = int(input('Enter the length of the chocolate: '))
+m = int(input('Enter the width of the chocolate: '))
+k = int(input('Enter the amount of cubes: '))
+
+if k % n == 0 or k % m == 0:
+    print('YES')
+else:
+    print('NO')
