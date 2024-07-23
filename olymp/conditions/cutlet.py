@@ -21,6 +21,7 @@ k = int(input('Enter the amount of cutlet: '))
 m = int(input('Enter the frying time of the cutlets: '))
 n = int(input('Enter the amount of cutlets that u can fry: '))
 
-res_1 = k / (2 * m)
-res_2 = n / res_1
-print(res_2)
+res = (n // k) * (2 * m)
+if n % k != 0:
+    res = res + 2 * m
+print(res)
