@@ -24,4 +24,14 @@
 # 2
 # 1
 # выходные данные
-# YES
+# Yes
+
+x_1 = int(input('Enter the column of the beaten figure: '))
+y_1 = int(input('Enter the line of the beaten figure: '))
+x_2 = int(input('Enter the column of the rook: '))
+y_2 = int(input('Enter the line of the rook: '))
+
+if x_1 == x_2 or y_1 == y_2:
+    print('YES')
+else:
+    print('NO')
