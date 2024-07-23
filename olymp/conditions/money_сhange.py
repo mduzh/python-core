@@ -23,3 +23,19 @@
 # 18
 # выходные данные
 # 0 1
+
+a = int(input('Enter first cost of amount of rub: '))
+b = int(input('Enter first cost of amount of coin: '))
+c = int(input('Enter second amount of rub: '))
+d = int(input('Enter second amount of coin: '))
+
+a_res = a * 100
+c_res = c * 100
+rem_res = (c_res + b) - (a_res + b)
+rem_rub = rem_res // 100
+rem_coin = rem_res % 100
+
+if rem_coin == 100:
+    rem_rub = rem_rub + 1
+
+print(rem_rub, ':', rem_coin)
