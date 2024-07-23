@@ -20,7 +20,7 @@
 # YES
 
 number_of_the_year = int(input('Enter the number of the year: '))
-if number_of_the_year % 4 == 0 and number_of_the_year % 100 != 0 or number_of_the_year % 400 == 0:
+if number_of_the_year % 4 == 0 and number_of_the_year % 100 != 0 and number_of_the_year % 400 == 0:
     print('YES')
 else:
     print('NO')

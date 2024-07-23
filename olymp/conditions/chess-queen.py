@@ -30,7 +30,7 @@ y_1 = int(input('Enter the line of the beaten figure: '))
 x_2 = int(input('Enter the column of the queen: '))
 y_2 = int(input('Enter the line of the queen: '))
 
-if x_1 == x_2 or y_1 == y_2 or x_2 * y_1 == x_1 * y_2:
+if x_1 == x_2 or y_1 == y_2 or (abs(x_2 - x_1) == abs(y_2 - y_1)):
     print('YES')
 else:
     print('NO')
