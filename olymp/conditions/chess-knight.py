@@ -24,3 +24,13 @@
 # 3
 # выходные данные
 # NO
+
+x_1 = int(input('Enter the column of the beaten figure: '))
+y_1 = int(input('Enter the line of the beaten figure: '))
+x_2 = int(input('Enter the column of the knight: '))
+y_2 = int(input('Enter the line of the knight: '))
+
+if abs(x_2 - x_1 == 2) and abs(y_2 - y_1 == 1) or abs(x_2 - x_1 == 1) and abs(y_2 - y_1 == 2):
+    print('YES')
+else:
+    print('NO')
