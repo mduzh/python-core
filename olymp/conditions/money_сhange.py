@@ -31,11 +31,10 @@ d = int(input('Enter second amount of coin: '))
 
 a_res = a * 100
 c_res = c * 100
+
 rem_res = (c_res + b) - (a_res + b)
+
 rem_rub = rem_res // 100
 rem_coin = rem_res % 100
-
-if rem_coin == 100:
-    rem_rub = rem_rub + 1
 
 print(rem_rub, ':', rem_coin)
