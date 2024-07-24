@@ -24,7 +24,7 @@ x_1 = int(input('Enter the first column: '))
 y_1 = int(input('Enter the first line: '))
 x_2 = int(input('Enter the second column: '))
 y_2 = int(input('Enter the second line: '))
-if abs(x_2 - x_1 <= 1) and abs(y_2 - y_1 <= 1):
+if abs(x_2 - x_1) <= 1 and abs(y_2 - y_1) <= 1:
     print('YES')
 else:
     print('NO')
