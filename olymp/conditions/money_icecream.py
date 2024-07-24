@@ -19,8 +19,8 @@
 # выходные данные
 # NO
 
-amount_of_portion = int(input('Enter the amount of portion of ice cream: '))
-if amount_of_portion % 3 == 0 or amount_of_portion % 5 == 0:
+amount = int(input('Enter the amount of portion of ice cream: '))
+if amount % 3 == 0 or amount % 5 == 0 or amount % (3 + 5) == 0:
     print('YES')
 else:
     print('NO')
