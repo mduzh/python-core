@@ -24,12 +24,12 @@
 a = int(input('Enter first number: '))
 b = int(input('Enter second number: '))
 
-x = -b / a
 
 if a == 0 and b != 0:
     print('NO')
-if a == 0 and b == 0:
+elif a == 0 and b == 0:
     print('INF')
 else:
+    x = -b / a
     print(x)
 
