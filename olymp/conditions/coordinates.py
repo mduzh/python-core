@@ -18,3 +18,19 @@
 # 1
 # выходные данные
 # YES
+
+x_1 = int(input('Enter first coordinate x: '))
+y_1 = int(input('Enter first coordinate y: '))
+x_2 = int(input('Enter second coordinate x: '))
+y_2 = int(input('Enter second coordinate y: '))
+
+if x_1 > 0 and y_1 > 0 and x_2 > 0 and y_2 > 0:
+    print('YES')
+elif x_1 < 0 and y_1 > 0 and x_2 < 0 and y_2 > 0:
+    print('YES')
+elif x_1 < 0 and y_1 < 0 and x_2 < 0 and y_2 < 0:
+    print('Yes')
+elif x_1 > 0 and y_1 < 0 and x_2 > 0 and y_2 < 0:
+    print('Yes')
+else:
+    print('NO')
