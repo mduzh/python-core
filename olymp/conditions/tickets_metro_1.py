@@ -20,9 +20,14 @@
 
 n = int(input('Enter the amount of rides: '))
 
-rides_1 = n // 60
-rem = n - (rides_1 * 60)
-rides_2 = rem // 10
-rides_3 = rem % 10
+count_60 = n // 60
+rem = n - (count_60 * 60)
+count_10 = rem // 10
+rem_1 = rem % 10
 
-print(rides_3, rides_2, rides_1)
+count_1 = 0
+if rem_1 * 15 > 125:
+    count_10 = count_10 + 1
+else:
+    count_1 = count_1 + rem_1
+print(count_1, count_10, count_60)
