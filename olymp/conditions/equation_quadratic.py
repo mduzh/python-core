@@ -16,3 +16,17 @@
 # 0
 # выходные данные
 # 0
+
+a = int(input('Enter first number: '))
+b = int(input('Enter second number: '))
+c = int(input('Enter third number: '))
+
+d = (b * b) - (4 * a * c)
+
+if d > 0:
+    x_1 = (-b + (d ** 0.5)) / (2 * a)
+    x_2 = (-b - (d ** 0.5)) / (2 * a)
+    print('x1 = ', x_1, 'x2 = ', x_2)
+elif d == 0:
+    res = -b / (2 * a)
+    print(res)

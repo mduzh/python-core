@@ -17,3 +17,12 @@
 # 129
 # выходные данные
 # 0 1 2
+
+n = int(input('Enter the amount of rides: '))
+
+rides_1 = n // 60
+rem = n - (rides_1 * 60)
+rides_2 = rem // 10
+rides_3 = rem % 10
+
+print(rides_3, rides_2, rides_1)
