@@ -19,3 +19,22 @@
 # 1
 # выходные данные
 # 1 0 0 0 0
+
+n = int(input('Enter the first amount of rides: '))
+
+count_60 = n // 60
+rem = n - (count_60 * 60)
+count_20 = rem // 20
+rem = rem - (count_20 * 20)
+count_10 = rem // 10
+rem = rem - (count_10 * 10)
+count_5 = rem // 5
+rem = rem - (count_5 // 5)
+
+count_1 = 0
+if n * 15 > 70:
+    count_5 = count_5 + 1
+else:
+    count_1 = count_1 + rem
+
+print(count_1, count_5, count_10, count_20, count_60)
