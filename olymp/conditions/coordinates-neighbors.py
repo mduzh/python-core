@@ -18,3 +18,9 @@
 # 1 2
 # 2 3
 # 3 2
+
+M = int(input('Enter the length of the board'))
+N = int(input('Enter the width of the board'))
+x = int(input('Enter the x coordinate: '))
+y = int(input('Enter the y coordinate: '))
+

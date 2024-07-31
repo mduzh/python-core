@@ -19,3 +19,12 @@
 # 7
 # выходные данные
 # NO
+
+A = int(input('Enter first number: '))
+B = int(input('Enter second number: '))
+C = int(input('Enter third number: '))
+
+if (A % 2 == 0 or B % 2 == 0 or C % 2 == 0) and (A % 2 != 0 or B % 2 != 0 or C % 2 != 0):
+    print("YES")
+else:
+    print('NO')
