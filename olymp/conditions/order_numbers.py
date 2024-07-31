@@ -18,3 +18,24 @@
 # 1
 # выходные данные
 # 1 1 2
+
+a = int(input('Enter first number: '))
+b = int(input('Enter second number: '))
+c = int(input('Enter third number: '))
+
+if a > b:
+    d = b
+    b = a
+    a = d
+
+if a > c:
+    d = c
+    c = a
+    a = d
+
+if b > c:
+    d = b
+    b = c
+    c = d
+
+print(a, b, c)
