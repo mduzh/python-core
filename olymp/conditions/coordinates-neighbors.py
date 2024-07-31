@@ -19,8 +19,16 @@
 # 2 3
 # 3 2
 
-M = int(input('Enter the length of the board'))
-N = int(input('Enter the width of the board'))
+M = int(input('Enter the length of the board: '))
+N = int(input('Enter the width of the board: '))
 x = int(input('Enter the x coordinate: '))
 y = int(input('Enter the y coordinate: '))
 
+if x + 1 <= M:
+    print(x + 1, y)
+if y + 1 <= N:
+    print(x, y + 1)
+if x - 1 >= 1:
+    print(x - 1, y)
+if y - 1 >= 1:
+    print(x, y - 1)
