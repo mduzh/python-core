@@ -27,3 +27,12 @@
 # 3
 # выходные данные
 # 3 bochki
+
+n = int(input('Enter the amount of bochkas: '))
+
+if n != 11 and n % 10 == 1:
+    print(n, 'bochka')
+elif n % 10 in [2, 3, 4] and n not in [12, 13, 14]:
+    print(n, 'bochki')
+else:
+    print(n, 'bochek')
