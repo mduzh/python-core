@@ -13,3 +13,9 @@
 # 2
 # Выходные данные
 # 5
+
+res = 0
+n = int(input('Enter the number: '))
+for value in range(1, n + 1):
+    res = res + value ** 2
+print(res)
