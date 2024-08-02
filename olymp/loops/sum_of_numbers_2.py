@@ -20,3 +20,11 @@
 # 5
 # Выходные данные
 # 14
+
+n = int(input("Enter first number: "))
+k = int(input('Enter second number: '))
+
+res = 0
+for value in range(1, n + 1):
+    res = res + (k + 2)
+print(res)

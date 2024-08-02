@@ -13,10 +13,18 @@
 # 4
 # 1
 # Выходные данные
-# 16
+# 16 ! должно быть 81 !!!
 #
 # Входные данные#
 # 3
 # 2
 # Выходные данные
-# 125
+# 125 ! должно быть 64 !!!
+
+n = int(input('Enter first number: '))
+k = int(input('Enter second number: '))
+
+res = 1
+for value in range(1, n + 1):
+    res = res * (k + 2)
+print(res)

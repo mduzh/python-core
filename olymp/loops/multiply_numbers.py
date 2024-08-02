@@ -12,10 +12,17 @@
 # Входные данные
 # 3
 # Выходные данные
-# 9
+# 27
 #
 # Входные данные
 # 10
 # Выходные данные
-# 30
+# 59049
+
+n = int(input('Enter your number: '))
+
+res = 1
+for value in range(1, n + 1):
+    res = res * 3
+print(res)
 

@@ -18,3 +18,9 @@
 # 11
 # Выходные данные
 # 55
+
+res = 0
+n = int(input('Enter your number: '))
+for value in range(1, n + 1):
+    res = res + 5
+print(res)
