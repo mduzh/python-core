@@ -21,3 +21,16 @@
 # 1
 # Выходные данные
 # 2
+
+def factorial(num):
+    res1 = 1
+    for value in range(1, num + 1):
+        res1 = res1 * value
+    return res1
+
+
+n = int(input("Enter first number: "))
+k = int(input("Enter second number: "))
+
+C = factorial(n) / (factorial(k) * factorial(n - k))
+print(C)
