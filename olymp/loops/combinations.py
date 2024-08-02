@@ -23,14 +23,14 @@
 # 2
 
 def factorial(num):
-    res1 = 1
+    res = 1
     for value in range(1, num + 1):
-        res1 = res1 * value
-    return res1
+        res = res * value
+    return res
 
 
 n = int(input("Enter first number: "))
 k = int(input("Enter second number: "))
 
-C = factorial(n) / (factorial(k) * factorial(n - k))
-print(C)
+c = factorial(n) / (factorial(k) * factorial(n - k))
+print(c)
