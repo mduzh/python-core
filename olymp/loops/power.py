@@ -15,3 +15,10 @@
 # 2
 # выходные данные
 # 4
+
+a = int(input("Enter first number: "))
+n = int(input("Enter second number: "))
+
+for value in range(1, n + 1):
+    res = a ** value
+print(res)

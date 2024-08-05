@@ -14,3 +14,17 @@
 # 1
 # выходные данные
 # 2
+
+N = int(input("Enter your number: "))
+
+def factorial(value):
+    res = 1
+    for value in range(1, N + 1):
+        res = res * value
+    return res
+
+
+total = 1
+for i in range(1, N + 1):
+    total = total + 1 / factorial(N)
+print(total)

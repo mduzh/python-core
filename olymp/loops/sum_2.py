@@ -13,3 +13,10 @@
 # 1
 # выходные данные
 # 2.66667
+
+n= int(input("Enter your number: "))
+res = 0
+
+for value in range(1, n + 1):
+    res = 4 * (1 + (-1)**n / (2 * n + 1))
+print(res)

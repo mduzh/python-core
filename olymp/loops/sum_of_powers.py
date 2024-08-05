@@ -11,3 +11,11 @@
 # 4
 # выходные данные
 # 31
+
+N = int(input("Enter your number: "))
+
+res = 0
+for value in range(0, N + 1):
+    res = res + (2 ** value)
+print(res)
+

@@ -13,3 +13,10 @@
 # 2
 # выходные данные
 # 1.25
+
+n = int(input("Enter your number: "))
+
+res = 0
+for value in range(1, n + 1):
+    res = 1 + 1 / (value ** 2)
+print(res)
