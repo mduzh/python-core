@@ -17,14 +17,15 @@
 
 N = int(input("Enter your number: "))
 
-def factorial(value):
+
+def factorial(num):
     res = 1
-    for value in range(1, N + 1):
+    for value in range(1, num + 1):
         res = res * value
     return res
 
 
 total = 1
 for i in range(1, N + 1):
-    total = total + 1 / factorial(N)
+    total = total + 1 / factorial(i)
 print(total)

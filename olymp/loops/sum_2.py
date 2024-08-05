@@ -14,9 +14,10 @@
 # выходные данные
 # 2.66667
 
-n= int(input("Enter your number: "))
+n = int(input("Enter your number: "))
 res = 0
 
-for value in range(1, n + 1):
-    res = 4 * (1 + (-1)**n / (2 * n + 1))
+for i in range(0, n + 1):
+    res = res + ((-1) ** i / (2 * i + 1))
+res = res * 4
 print(res)

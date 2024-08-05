@@ -19,6 +19,8 @@
 a = int(input("Enter first number: "))
 n = int(input("Enter second number: "))
 
+# res = a * a * a * a
+res = 1
 for value in range(1, n + 1):
-    res = a ** value
+    res = res * a
 print(res)
