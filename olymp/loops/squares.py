@@ -15,3 +15,11 @@
 # 8
 # выходные данные
 # 4
+import math
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+for value in range(a, b + 1):
+    if value ** 2 in range(a, b + 1):
+        print(value ** 2)
