@@ -18,3 +18,23 @@
 # 12300
 # Выходные данные
 # 321
+
+
+
+
+
+
+
+def func(number):
+    result = 0
+
+    while number > 0:
+        digit = number % 10
+        result = result * 10 + digit
+        number //= 10
+
+    return result
+
+
+res = func(12345)
+print(res)

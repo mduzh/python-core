@@ -24,3 +24,11 @@
 # 77
 # Выходные данные
 # 7
+
+x = int(input("Enter first number: "))
+
+for i in range(2, x + 1):
+    if x % i == 0:
+        print(i)
+        break
+

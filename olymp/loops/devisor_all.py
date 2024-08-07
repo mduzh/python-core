@@ -19,4 +19,9 @@
 # Выходные данные
 # 1 2 3
 
+x = int(input("Enter your number: "))
+
+for i in range(1, x + 1):
+    if x % i == 0:
+        print(i)
 

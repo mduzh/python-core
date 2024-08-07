@@ -19,3 +19,12 @@
 # 6
 # Выходные данные
 # 3
+
+x = int(input("Enter first number: "))
+
+res = 0
+for i in range(1, x + 1):
+    if x % i == 0:
+        res = res + 1
+
+print(res)
