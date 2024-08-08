@@ -34,3 +34,16 @@
 # 3
 # Выходные данные
 # 0
+
+N = int(input("Enter your number: "))
+num_list = []
+total = 0
+
+for value in range(0, N):
+    res = int(input("Enter your number: "))
+    num_list.append(res)
+
+for i in num_list:
+    if i == 0:
+        total = total + 1
+print(total)

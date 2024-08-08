@@ -21,3 +21,17 @@
 # 28
 # Выходные данные
 # NO
+
+N = int(input("Enter the amount of numbers: "))
+num_list = []
+
+for value in range(0, N):
+    res = int(input("Enter your number: "))
+    num_list.append(res)
+
+for i in num_list:
+    if i == 0:
+        zero_here = "Yes"
+    else:
+        zero_here = "NO"
+print(zero_here)
