@@ -35,7 +35,7 @@
 # Выходные данные
 # 0
 
-N = int(input("Enter your number: "))
+N = int(input("Enter the amount of values: "))
 num_list = []
 total = 0
 

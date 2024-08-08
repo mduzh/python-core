@@ -22,7 +22,7 @@
 # Выходные данные
 # NO
 
-N = int(input("Enter the amount of numbers: "))
+N = int(input("Enter the amount of values: "))
 num_list = []
 
 for value in range(0, N):

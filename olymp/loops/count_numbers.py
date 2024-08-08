@@ -34,7 +34,7 @@
 # 5 2 3
 
 
-N = int(input("Enter the amount of numbers: "))
+N = int(input("Enter the amount of values: "))
 num_list = []
 total_zero = 0
 total_positive = 0
