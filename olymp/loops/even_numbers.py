@@ -13,3 +13,9 @@
 # выходные данные
 # 2 4
 
+a = int(input("Enter first number: "))
+b = int(input("Enter second  number: "))
+
+for value in range(a, b + 1):
+    if value % 2 == 0:
+        print(value)
