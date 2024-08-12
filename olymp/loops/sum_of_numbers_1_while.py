@@ -21,3 +21,13 @@
 # 10
 # Выходные данные
 # 20
+
+n = int(input("Enter first number: "))
+k = int(input("Enter second number: "))
+
+res = 0
+i = 1
+while i <= n:
+    res = res + k
+    i = i + 1
+print(res)

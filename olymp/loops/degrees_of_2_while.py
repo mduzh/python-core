@@ -17,3 +17,11 @@
 # 50
 # выходные данные
 # 1 2 4 8 16 32
+import math
+
+n = int(input("Enter your number: "))
+
+i = 0
+while 2 ** i <= n:
+    print(2 ** i)
+    i = i + 1

@@ -26,3 +26,45 @@
 # 5
 # выходные данные
 # NO
+
+n = int(input("Enter your number: "))
+
+res = "No"
+
+i = 0
+while 2 ** i <= n:
+    if n == 2**i:
+        res = "YES"
+        break
+    else:
+        i = i + 1
+print(res)
+
+
+# for i in range(5):
+#     print(i, end="")
+#
+# print("")
+#
+# i = 0
+# while i < 5:
+#     print(i, end="")
+#     i = i + 1
+# print("")
+#
+# i = 0
+# while True:
+#     if i >= 5:
+#         break
+#     print(i, end="")
+#     i = i + 1
+# print("")
+#
+#
+# while True:
+#     s = input("Enter: ")
+#     if s == 'exit()':
+#         print("Process finished with exit code 0")
+#         break
+#     else:
+#         print("You entered:", s)
