@@ -18,3 +18,12 @@
 #
 # выходные данные
 # 9
+
+x = int(input("Enter first distance: "))
+y = int(input("Enter second distance: "))
+
+n = 1
+while x <= y:
+    x = x + x * 0.1
+    n = n + 1
+print(n)

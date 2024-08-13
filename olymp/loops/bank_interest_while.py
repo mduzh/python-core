@@ -17,3 +17,16 @@
 # 200
 # выходные данные
 # 8
+
+x = int(input("Enter first amount of money: "))
+p = int(input("Enter the percent of changing: "))
+y = int(input("Enter the final amount of money you need to reach: "))
+
+n = 0
+
+while x <= y:
+    x = int(x * 1.1)
+    n = n + 1
+
+print(n)
+
