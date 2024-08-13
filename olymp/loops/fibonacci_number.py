@@ -19,3 +19,23 @@
 # 10
 # Выходные данные
 # -1
+
+n = int(input("Enter your number: "))
+
+a = 0
+b = 1
+i = 2
+f = b
+while True:
+    f = a + b
+    if f < n:
+        a = b
+        b = f
+        i += 1
+    else:
+        break
+if f == n:
+    print(i)
+else:
+    print(-1)
+
