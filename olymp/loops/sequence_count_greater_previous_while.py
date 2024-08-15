@@ -22,3 +22,15 @@
 # 0
 # Выходные данные
 # 2
+
+prev_num = -1
+total = 0
+while True:
+    num = int(input("Enter your number: "))
+    if num == 0:
+        break
+    elif num > prev_num:
+        if prev_num != -1:
+            total += 1
+        prev_num = num
+print(total)

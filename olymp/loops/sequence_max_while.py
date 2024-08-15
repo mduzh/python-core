@@ -23,3 +23,13 @@
 # 0
 # Выходные данные
 # 9
+
+max_value = -1
+total = 0
+while True:
+    i = int(input("Enter your number: "))
+    if i == 0:
+        break
+    elif i > max_value:
+        max_value = i
+print(max_value)

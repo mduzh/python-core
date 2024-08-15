@@ -32,5 +32,5 @@ while True:
     else:
         total += 1
         summa = summa + i
-        res = summa / total
+res = summa / total
 print(res)
