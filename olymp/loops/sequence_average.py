@@ -22,3 +22,15 @@
 # Выходные данные
 # 5.66666666667
 #
+
+total = 0
+summa = 0
+while True:
+    i = int(input("Enter your number: "))
+    if i == 0:
+        break
+    else:
+        total += 1
+        summa = summa + i
+        res = summa / total
+print(res)

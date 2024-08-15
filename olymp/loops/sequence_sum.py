@@ -22,3 +22,12 @@
 # 0
 # Выходные данные
 # 17
+
+summa = 0
+while True:
+    i = int(input("Enter your number: "))
+    if i == 0:
+        break
+    else:
+        summa = summa + i
+print(summa)

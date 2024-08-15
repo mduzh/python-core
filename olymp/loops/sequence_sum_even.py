@@ -22,3 +22,12 @@
 # 0
 # Выходные данные
 # 2
+
+total_even = 0
+while True:
+    i = int(input("Enter your number: "))
+    if i == 0:
+        break
+    elif i % 2 == 0:
+        total_even += 1
+print(total_even)
