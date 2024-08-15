@@ -28,4 +28,16 @@
 # 9
 # 0
 # Выходные данные
+
 # 3
+
+total = 0
+
+
+while True:
+    i = int(input("Enter your number: "))
+    if i == 0:
+        break
+    else:
+        total += 1
+print(total)
