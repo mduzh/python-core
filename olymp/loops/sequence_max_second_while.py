@@ -28,4 +28,17 @@
 # Выходные данные
 # 1
 
+total = 0
+max_num = -1
+second_max_num = -1
+while True:
+    num = int(input("Enter your number: "))
+    if num == 0:
+        break
+    if num > max_num:
+        second_max_num = max_num
+        max_num = num
+    elif second_max_num < num < max_num:
+        second_max_num = num
+print(second_max_num)
 
