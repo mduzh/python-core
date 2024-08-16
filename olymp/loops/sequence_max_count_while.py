@@ -31,15 +31,16 @@
 # Выходные данные
 # 2
 
-total = 0
+counter = 0
 max_num = -1
 while True:
     num = int(input("Enter your number: "))
     if num == 0:
         break
+
     if num > max_num:
         max_num = num
-        num += 1
-    if num == max_num:
-        total += 1
-print(total)
+        counter = 1
+    elif num == max_num:
+        counter += 1
+print(counter)
