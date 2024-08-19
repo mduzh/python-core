@@ -24,3 +24,15 @@
 # 0
 # Выходные данные
 # 17
+
+prev_num = -1
+summa = 0
+while True:
+    num = int(input("Enter your number: "))
+    if prev_num == 0 and num == 0:
+        break
+    else:
+        summa = summa + num
+
+    prev_num = num
+print(summa)
