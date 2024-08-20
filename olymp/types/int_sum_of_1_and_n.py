@@ -24,3 +24,8 @@
 # 3
 # Выходные данные
 # 6
+
+N = int(input("enter your number: "))
+
+res = ((1 + N) * N) / 2
+print(res)
