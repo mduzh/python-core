@@ -20,3 +20,13 @@
 # 2 3
 # Выходные данные
 # 2
+
+n = int(input("Enter the amount of boxes: "))
+m = int(input("Enter the amount of rabbits: "))
+
+if m % n != 0:
+    count = 1
+    count = count + m // n
+else:
+    count = m / n
+print(count)
