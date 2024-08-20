@@ -20,3 +20,19 @@
 # 0
 # выходные данные
 # 2
+
+max_count = 0
+min_count = 0
+prev_num = -1
+count = 0
+while True:
+    num = int(input("Enter your number: "))
+    if num == 0:
+        break
+
+    if num > prev_num:
+        max_count += 1
+    if num < min_count:
+        min_count += 1
+
+    prev_num = num
