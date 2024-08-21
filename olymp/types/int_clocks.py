@@ -20,3 +20,10 @@
 #
 # Выходные данные
 # It is 3 hours 0 minutes.
+
+d = int(input("Enter the degree: "))
+h = 360 // 12
+new_h = d // h
+new_m = (d % h) * 2
+
+print("It is", new_h, "hours", new_m, "minutes")
