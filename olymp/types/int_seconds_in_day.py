@@ -19,3 +19,10 @@
 # 13257
 # Выходные данные
 # It is 3 hours 40 minutes.
+
+k = int(input("Enter your amount of seconds: "))
+
+h = k // 3600
+rem_sec = k % 3600
+m = rem_sec // 60
+print("It is", h, "hours", m, "minutes.")
