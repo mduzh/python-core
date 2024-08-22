@@ -23,3 +23,13 @@
 # 1 3 20
 # Выходные данные
 # 50
+
+h_1 = int(input("Enter first hour: "))
+m_1 = int(input("Enter first minute: "))
+s_1 = int(input("Enter first second: "))
+h_2 = int(input("Enter second hour: "))
+m_2 = int(input("Enter second minute: "))
+s_2 = int(input("Enter second second: "))
+
+res = ((h_2 * 3600) + (m_2 * 60) + s_2) - ((h_1 * 3600) + (m_1 * 60) + s_1)
+print(res)
