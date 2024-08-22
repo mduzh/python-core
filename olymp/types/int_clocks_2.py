@@ -24,12 +24,19 @@
 # Выходные данные
 # 50
 
-h_1 = int(input("Enter first hour: "))
-m_1 = int(input("Enter first minute: "))
-s_1 = int(input("Enter first second: "))
-h_2 = int(input("Enter second hour: "))
-m_2 = int(input("Enter second minute: "))
-s_2 = int(input("Enter second second: "))
+value_1 = input("Enter first values of time: ")
+value_2 = input("Enter second values of time: ")
+
+values_1 = value_1.split()
+values_2 = value_2.split()
+
+h_1 = int(values_1[0])
+m_1 = int(values_1[1])
+s_1 = int(values_1[2])
+
+h_2 = int(values_2[0])
+m_2 = int(values_2[1])
+s_2 = int(values_2[2])
 
 res = ((h_2 * 3600) + (m_2 * 60) + s_2) - ((h_1 * 3600) + (m_1 * 60) + s_1)
 print(res)

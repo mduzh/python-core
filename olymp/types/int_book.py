@@ -28,3 +28,17 @@
 # 15 43
 # Выходные данные
 # 3 13
+
+# k = int(input("Enter the amount of ines on a page: "))
+# n = int(input("Enter the number of a line in text: "))
+
+value = input("Enter data: ")
+values = value.split()
+
+k = int(values[0])
+n = int(values[1])
+
+pages = n // k + 1
+lines = n % k
+
+print(pages, lines)
