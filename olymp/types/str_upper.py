@@ -22,3 +22,10 @@
 # B
 # Выходные данные
 # B
+
+value = input("Enter your value: ")
+print(value.upper())
+
+if value == value.lower():
+    value = value.upper()
+print(value)

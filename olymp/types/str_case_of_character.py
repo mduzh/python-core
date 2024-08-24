@@ -22,3 +22,13 @@
 # W
 # Выходные данные
 # w
+
+value = input("Enter your value: ")
+print(value.swapcase())
+
+if value == value.upper():
+    value = value.lower()
+else:
+    value = value.upper()
+print(value)
+

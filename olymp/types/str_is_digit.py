@@ -10,7 +10,7 @@
 # Задан единственный символ c.
 #
 # Выходные данные
-# Необходимо вывести  строку yes, если символ является цифрой, и строку no в противном случае.
+# Необходимо вывести строку yes, если символ является цифрой, и строку no в противном случае.
 #
 # Примеры
 # Входные данные
@@ -22,3 +22,18 @@
 # Выходные данные
 # yes
 
+value = input("Enter your value: ")
+
+if value.isdigit():
+    print("YES")
+else:
+    print("NO")
+
+digits = "1234567890"
+is_found = None
+for i in digits:
+    if i.isdigit() == value.isdigit():
+        is_found = "Yes"
+    else:
+        is_found = "No"
+print(is_found)
