@@ -26,6 +26,16 @@
 value = input("Enter your value: ")
 print(value.upper())
 
-if value == value.lower():
-    value = value.upper()
-print(value)
+lowers = "abcdefghijklmnopqrstuvwxyz"
+uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+ind = -1
+for i in range(0, len(lowers)):
+    if lowers[i] == value:
+        ind = i
+        break
+
+if ind != -1:
+    print(uppers[ind])
+else:
+    print(value)

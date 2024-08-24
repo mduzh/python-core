@@ -30,10 +30,9 @@ else:
     print("NO")
 
 digits = "1234567890"
-is_found = None
+is_found = "No"
 for i in digits:
-    if i.isdigit() == value.isdigit():
+    if i == value:
         is_found = "Yes"
-    else:
-        is_found = "No"
+        break
 print(is_found)

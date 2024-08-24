@@ -26,9 +26,22 @@
 value = input("Enter your value: ")
 print(value.swapcase())
 
-if value == value.upper():
-    value = value.lower()
-else:
-    value = value.upper()
-print(value)
+lowers = "abcdefghijklmnopqrstuvwxyz"
+uppers = "ABSDEFGHIJKLMNOPQRSTUVWXYZ"
 
+ind_lower = -1
+for i in range(0, len(lowers)):
+    if lowers[i] == value:
+        ind_lower = i
+        break
+
+if ind_lower != -1:
+    print(uppers[ind_lower])
+else:
+    ind_upper = -1
+    for i in range(0, len(uppers)):
+        if uppers[i] == value:
+            ind_upper = i
+            break
+    if ind_upper != -1:
+        print(lowers[ind_upper])
