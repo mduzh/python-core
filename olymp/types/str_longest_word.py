@@ -33,3 +33,10 @@ for s in string_list:
     if len(s) > len(max_string):
         max_string = s
 print(len(max_string), ':', max_string)
+
+value = None
+for s in string_list:
+    value = s
+    if len(value) > len(max_string):
+        max_string = value
+print(len(max_string), ':', max_string)
