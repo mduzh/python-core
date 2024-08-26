@@ -34,9 +34,13 @@ for s in string_list:
         max_string = s
 print(len(max_string), ':', max_string)
 
-value = None
-for s in string_list:
-    value = s
-    if len(value) > len(max_string):
-        max_string = value
-print(len(max_string), ':', max_string)
+word = ""
+max_word = ""
+for s in string:
+    if s != " ":
+        word += s
+        if len(word) > len(max_word):
+            max_word = word
+    else:
+        word = ""
+print(len(max_word), ':', max_word)
