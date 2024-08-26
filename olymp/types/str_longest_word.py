@@ -24,3 +24,12 @@
 # выходные данные
 # three
 # 5
+
+string = input("Enter your string: ")
+
+string_list = string.split()
+max_string = " "
+for s in string_list:
+    if len(s) > len(max_string):
+        max_string = s
+print(len(max_string), ':', max_string)
