@@ -26,8 +26,8 @@ string = input("Enter your string: ")
 string_list = string.split()
 print(len(string_list))
 
-total = 1
+words = 1
 for s in string:
-    if i == " ":
-        total = total + 1
-print(total)
+    if s == " ":
+        words = words + 1
+print(words)
