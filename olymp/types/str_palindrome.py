@@ -30,11 +30,17 @@
 string = input("Enter your string: ")
 
 if string == string[::-1]:
-    print("Polyndrome")
+    print("Yes")
 else:
     print("No")
 
-
+res = "Yes"
+for i in range(0, len(string) // 2):
+    # print(string[i], string[(i + 1) * -1])
+    if string[i] != string[(i + 1) * -1]:
+        res = "No"
+        break
+print(res)
 
 
 
