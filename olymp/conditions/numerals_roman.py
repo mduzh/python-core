@@ -21,3 +21,23 @@
 # 46
 # выходные данные
 # XLVI
+
+
+x = int(input('Enter your number: '))
+
+if x // 100 != 0:
+    res_1 = 'C' * (x // 100)
+    print(res_1)
+elif x // 50 != 0:
+    res_2 = 'L' * (x // 50)
+    print(res_2)
+elif x // 10 != 0:
+    res_3 = 'X' * (x // 10)
+    print(res_3)
+elif x // 5 != 0:
+    res_4 = 'V' * (x // 5)
+    print(res_4)
+elif x % 5 != 0:
+    res_5 = 'I' * (x % 5)
+    print(res_5)
+

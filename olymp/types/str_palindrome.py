@@ -27,6 +27,15 @@
 #
 # Выходные данные
 # yes
+string = input("Enter your string: ")
+
+if string == string[::-1]:
+    print("Polyndrome")
+else:
+    print("No")
+
+
+
 
 
 
