@@ -24,3 +24,19 @@
 # Выходные данные
 # f
 
+string = input("Enter your string: ")
+
+for s in string:
+    if string.count(s) == 2:
+        print(s)
+        break
+
+
+for s in string:
+    counter = 0
+    for el in string:
+        if s == el:
+            counter += 1
+    if counter == 2:
+        print(s)
+        break
