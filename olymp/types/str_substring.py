@@ -20,10 +20,18 @@
 # выходные данные
 # yes
 
-str_1 = input("enter first string: ")
-str_2 = input("Enter second string: ")
+sub_string = input("Enter first string: ")
+string = input("Enter second string: ")
 
-if str_1 in str_2:
+if sub_string in string:
     print("Yes")
 else:
     print("No")
+
+res = "No"
+for i in range(0, len(string)):
+    if sub_string == string[i: i + len(sub_string)]:
+        res = "Yes"
+        break
+print(res)
+
