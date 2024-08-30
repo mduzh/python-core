@@ -19,3 +19,11 @@
 # ababacaba
 # выходные данные
 # yes
+
+str_1 = input("enter first string: ")
+str_2 = input("Enter second string: ")
+
+if str_1 in str_2:
+    print("Yes")
+else:
+    print("No")
