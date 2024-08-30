@@ -19,3 +19,18 @@
 # South 19
 # выходные данные
 # 0 -19
+
+
+coordinates = input("Enter the coordinates of the treasure: ")
+
+coordinates_list = coordinates.split()
+coordinates_int = int(coordinates_list[1])
+
+if coordinates_list[0] == "North":
+    print(0, coordinates_int)
+elif coordinates_list[0] == "South":
+    print(0, coordinates_int * -1)
+elif coordinates_list[0] == "East":
+    print(coordinates_int, 0)
+elif coordinates_list[0] == "West":
+    print(coordinates_int * -1, 0)
