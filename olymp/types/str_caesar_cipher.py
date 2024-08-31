@@ -20,3 +20,16 @@
 # 3
 # выходные данные
 # WXYZ
+
+cipher = input("Enter your cipher: ")
+k = int(input("Enter the amount of rounds: "))
+
+letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+result = ""
+for c in cipher:
+    c_ind = letters.index(c)
+    new_ind = (c_ind - k) % 26
+    result = result + letters[new_ind]
+
+print(result)
