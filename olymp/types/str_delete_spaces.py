@@ -25,3 +25,21 @@
 #    d  iz  czl l l h udq t
 # выходные данные
 #  d iz czl l l h udq t
+
+string = input("Enter your string: ")
+
+string_list = string.split()
+
+res = " ".join(string_list)
+print(res)
+
+res = ""
+prev_str = ""
+for s in string:
+    if s != " ":
+        res += s
+    else:
+        if prev_str != " ":
+            res += " "
+    prev_str = s
+print(res)
