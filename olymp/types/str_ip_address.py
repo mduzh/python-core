@@ -44,3 +44,27 @@
 # 255.00.255.255
 # Выходные данные
 # 0
+
+ip_data = input("Enter your ip address: ")
+
+ip_data_list = ip_data.split(".")
+
+res = 0
+if len(ip_data_list) != 4:
+    res = 0
+else:
+    res = 1
+    for value in ip_data_list:
+        if not value.isdigit():
+            res = 0
+            break
+
+        if 0 > int(value) > 255:
+            res = 0
+            break
+
+        if value[0] == "0" and len(value) > 1:
+            res = 0
+            break
+
+print(res)
