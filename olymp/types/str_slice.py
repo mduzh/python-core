@@ -36,3 +36,16 @@
 # arbadakarbA
 # abdkrA
 # 11
+
+string = input("Enter your string: ")
+
+print(string[2])
+print(string[-2])
+print(string[0:5])
+print(string[0:-2])
+print(string[0::2])
+print(string[1::2])
+print(string[-1::-1])
+print(string[-1::-2])
+print(len(string))
+
